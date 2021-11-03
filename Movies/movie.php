@@ -18,13 +18,13 @@ class Movie {
     private $genere;
     private $durata;
 
-    function __construct($titolo, $regia, $paese, $anno, $genere, $durata){
-        $this->titolo = $titolo;
-        $this->regia = $regia;
-        $this->paese = $paese;
-        $this->anno = $anno;
-        $this->genere = $genere;
-        $this->durata = $durata;
+    function __construct($_titolo, $_regia, $_paese, $_anno, $_genere, $_durata){
+        $this->titolo = $_titolo;
+        $this->regia = $_regia;
+        $this->paese = $_paese;
+        $this->anno = $_anno;
+        $this->genere = $_genere;
+        $this->durata = $_durata;
     }
 
     public function getTitolo() {
@@ -34,7 +34,7 @@ class Movie {
     public function  getGenere() {
         return $this->genere;
     }
-    
+
 }
 
 ?>
