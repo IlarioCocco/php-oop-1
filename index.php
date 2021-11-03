@@ -1,8 +1,8 @@
 <?php
 
 require __DIR__ . "./Movies/movie.php";
-$predator = new Movie("predator", "Jhon McTiernan", "u.s.a", 1987, "fantascienza", 107,);
-var_dump($predator);
+$movie = new Movie("predator", "Jhon McTiernan", "u.s.a", 1987, "fantascienza", 107,);
+var_dump($movie);
 
 ?>
 
@@ -24,7 +24,7 @@ var_dump($predator);
     <?php
     echo
     "<ul>
-        <li>il genere del Film {$predator->getTitolo()} è: {$predator->getGenere()}</li>
+        <li>il genere del Film {$movie->getTitolo()} è: {$movie->getGenere()}</li>
     </ul>"
     ?>
 

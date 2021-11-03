@@ -18,7 +18,7 @@ class Movie {
     private $genere;
     private $durata;
 
-    function __construct($_titolo, $_regia, $_paese, $_anno, $_genere, $_durata){
+    public function __construct($_titolo, $_regia, $_paese, $_anno, $_genere, $_durata){
         $this->titolo = $_titolo;
         $this->regia = $_regia;
         $this->paese = $_paese;
